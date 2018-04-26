@@ -12,5 +12,5 @@ sudo npm install
 To reset a Transmitter (replace "425BGT" with transmitter id to reset)
 ```
 cd /root/src/reset-g5-tx
-node reset 425BGT
+sudo node reset 425BGT
 ```
