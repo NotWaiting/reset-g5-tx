@@ -12,5 +12,14 @@ sudo npm install
 To reset a Transmitter (replace "425BGT" with transmitter id to reset)
 ```
 cd /root/src/reset-g5-tx
-sudo node reset 425BGT
+DEBUG=smp,transmitter,bluetooth-manager node reset 425BGT
 ```
+
+Wait at least 5 minutes since control messages only go to the transmitter on 5 minute intervals. Once you get the following Tx/Rx messages, it should have worked and you can <Ctrl> C to stop the process. 
+
+```
+  bluetooth-manager Tx 428668 +20ms
+  bluetooth-manager Rx 438374f9 +23ms
+got message [object Object]
+```
+
