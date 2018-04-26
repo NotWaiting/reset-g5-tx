@@ -1,0 +1,26 @@
+{
+  "name": "reset-g5-tx",
+  "version": "0.1.0",
+  "description": "Reset g5 Transmitter xdrip openaps",
+  "main": "logger/index.js",
+  "license": "MIT",
+  "scripts": {
+    "global-install": "npm install && sudo npm install -g && sudo npm link "
+  },
+  "dependencies": {
+    "xdrip-js": "thebookins/xdrip-js#dev"
+  },
+  "homepage": "https://github.com/efidoman/reset-g5-tx",
+  "config": {
+    "blanket": {
+      "pattern": [
+        "bin"
+      ],
+      "data-cover-never": [
+        "node_modules"
+      ]
+    }
+  }
+}
+
+
